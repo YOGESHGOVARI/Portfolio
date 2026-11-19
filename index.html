@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yogesh Govari — Software Developer · Full-Stack · AI/ML</title>
+  <meta name="description" content="Portfolio of Yogesh Radhesh Govari — Software Developer at TCS, full-stack engineer and AI/ML enthusiast building backend systems, web apps and intelligent automation.">
+  <meta name="theme-color" content="#050a1c">
+  <meta property="og:title" content="Yogesh Govari — Software Developer · Full-Stack · AI/ML">
+  <meta property="og:description" content="Backend systems, full-stack apps and AI agents. Computer-vision projects, cloud and security certifications.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <div class="gridbg" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="crt" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top">
+    <nav class="bar" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Home"><span class="brand-mark">YG</span><span class="brand-name">Yogesh Govari</span></a>
+      <ul class="menu" id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certs">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="bar-actions">
+        <button class="sq" id="theme" aria-label="Toggle dark / light theme" title="Toggle theme">◐</button>
+        <a class="btn sm accent" href="assets/Yogesh-Govari-Resume.pdf" download>Resume ↓</a>
+        <button class="sq burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ═══ HOME ═══ -->
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="prompt-line"><span class="u">yogesh@portfolio</span>:<span class="p">~</span>$ ./hello <span class="arg">--name</span> "Yogesh Govari"</p>
+          <p class="out"><span class="wave">👋</span> Hi, I'm Yogesh Govari!</p>
+          <h1><span class="hl">Software</span> Developer<br><span class="outline">Full-Stack</span> &amp; <span class="hl blue">AI/ML</span></h1>
+          <p class="roles-line" id="roles"><span class="pr">$</span> <span id="typed"></span><span class="cur"></span></p>
+          <p class="lead">I'm a Software Developer at <b>Tata Consultancy Services (TCS)</b> with over two years of experience building backend systems, full-stack web applications and AI-powered automation. I turn complex problems into practical software — and I'm especially curious about where <b>engineering meets Artificial Intelligence</b>.</p>
+          <div class="focus">
+            <span>Backend Engineering</span><span>Full-Stack Development</span><span>Artificial Intelligence</span><span>Machine Learning</span><span>Intelligent Automation</span><span>Computer Vision</span>
+          </div>
+          <div class="cta">
+            <a class="btn accent" href="#projects">View My Projects →</a>
+            <a class="btn" href="#experience">Explore My Experience</a>
+            <a class="btn" href="assets/Yogesh-Govari-Resume.pdf" download>Download My Resume ↓</a>
+            <a class="btn dark" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <figure class="detect card" aria-label="Illustration of object detection with audio feedback">
+          <div class="detect-top"><i></i><i></i><i></i><span>visual_assist.py — illustrative demo</span></div>
+          <svg class="scene" viewBox="0 0 520 330" role="img" aria-label="Wireframe desk with a laptop, a cup and a book, each outlined by a detection box">
+            <defs><pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#60a5fa" opacity=".22"/></pattern></defs>
+            <rect width="520" height="330" fill="url(#dots)"/>
+            <line x1="0" y1="262" x2="520" y2="262" stroke="#60a5fa" stroke-opacity=".5" stroke-width="2"/>
+            <g class="obj o1 hud" style="color:#60a5fa">
+              <rect class="fillA" x="40" y="150" width="150" height="96" rx="8"/>
+              <rect x="52" y="162" width="126" height="72" rx="4"/>
+              <path class="fillA" d="M22 246h186l-14 16H36z"/>
+              <path d="M70 180l14 12-14 12M96 206h26"/>
+            </g>
+            <g class="obj o2 hud" style="color:#22d3ee">
+              <path class="fillB" d="M262 190h62l-6 66h-50z"/>
+              <path d="M324 202h14a12 12 0 010 28h-17"/>
+              <path d="M280 172c-8-10 8-14 0-24M300 172c-8-10 8-14 0-24"/>
+            </g>
+            <g class="obj o3 hud" style="color:#a78bfa">
+              <rect class="fillC" x="372" y="206" width="112" height="56" rx="4"/>
+              <path d="M388 206v56M404 226h62M404 240h44"/>
+            </g>
+            <g class="box b1"><rect x="14" y="140" width="204" height="130" fill="none" stroke="#60a5fa" stroke-width="2.4" stroke-dasharray="8 6"/><rect x="14" y="116" width="124" height="24" fill="#60a5fa"/><text x="22" y="133" class="lbl">laptop · 0.93</text></g>
+            <g class="box b2"><rect x="250" y="140" width="106" height="128" fill="none" stroke="#22d3ee" stroke-width="2.4" stroke-dasharray="8 6"/><rect x="250" y="116" width="100" height="24" fill="#22d3ee"/><text x="258" y="133" class="lbl">cup · 0.88</text></g>
+            <g class="box b3"><rect x="362" y="196" width="132" height="76" fill="none" stroke="#a78bfa" stroke-width="2.4" stroke-dasharray="8 6"/><rect x="362" y="172" width="108" height="24" fill="#a78bfa"/><text x="370" y="189" class="lbl">book · 0.91</text></g>
+            <rect class="scan" x="0" y="0" width="520" height="2.5" fill="#60a5fa"/>
+          </svg>
+          <figcaption class="audio" aria-live="off">
+            <span class="spk">🔊</span>
+            <span class="say s1">“Laptop — on your left.”</span>
+            <span class="say s2">“Cup — in the centre.”</span>
+            <span class="say s3">“Book — on your right.”</span>
+          </figcaption>
+          <p class="tiny">Inspired by <b>Visual Assist</b>, my final-year project: CNN + YOLOv5 object detection with audio feedback.</p>
+        </figure>
+      </div>
+
+      <div class="wrap facts">
+        <div class="fact card"><b class="count" data-to="2" data-suffix="+">0</b><span>years in professional software development</span></div>
+        <div class="fact card"><b class="count" data-to="8.26" data-dec="2">0</b><span>CGPA · B.E. Information Technology</span></div>
+        <div class="fact card"><b class="count" data-to="7.0" data-dec="1">0</b><span>IELTS Academic overall band</span></div>
+        <div class="fact card"><b class="count" data-to="4" data-suffix="">0</b><span>industry &amp; online certifications</span></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track" id="tick">
+      <span>Node.js</span><span>NestJS</span><span>Express.js</span><span>React.js</span><span>TypeScript</span><span>Python</span><span>MongoDB</span><span>PostgreSQL</span><span>Azure</span><span>AWS</span><span>Docker</span><span>YOLOv5</span><span>Computer Vision</span><span>Generative AI</span><span>AI Agents</span>
+    </div></div>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section class="sec" id="about">
+      <div class="wrap">
+        <header class="head reveal"><span class="tag">about.md</span><h2>A little about <span class="hl">myself</span></h2></header>
+        <div class="two">
+          <div class="prose reveal">
+            <p>I am <b>Yogesh Radhesh Govari</b>, an Information Technology graduate and Software Developer from India. I completed my Bachelor of Engineering in Information Technology with a CGPA of <b>8.26</b> and earned <b>Honours in Artificial Intelligence and Machine Learning</b>.</p>
+            <p>During my engineering studies I developed an interest in programming, software development and AI. Subjects such as Mathematics, Deep Learning, Data Science, Cybersecurity and the Internet of Things helped me understand different areas of computing.</p>
+            <p>My interest in AI grew through academic projects in computer vision and machine learning. I enjoyed seeing how algorithms apply to practical problems rather than studying them only in theory.</p>
+            <p>One of my most meaningful projects was <b>Visual Assist</b>, an AI-powered assistive system that helps visually impaired people identify objects around them. It showed me how technology can address accessibility challenges.</p>
+            <p>After my degree I joined <b>TCS</b> as a Software Developer, where I've worked on frontend development, complex backend systems, database-driven applications, API integrations and AI agents for task automation. I enjoy learning new technologies, trying different approaches and continuously improving.</p>
+          </div>
+          <aside class="stack-col">
+            <div class="card note reveal">
+              <h3>What drives me</h3>
+              <p>I'm interested in the <b>intersection of software engineering and AI</b>. Traditional development taught me how applications are designed and maintained; working with AI agents opened up new possibilities in automation and intelligent systems.</p>
+              <p>My goal: keep growing as a developer while building deeper expertise in <b>AI, Machine Learning</b> and advanced software engineering.</p>
+            </div>
+            <div class="card quick reveal">
+              <h3>Quick facts</h3>
+              <dl>
+                <div><dt>Role</dt><dd>Software Developer @ TCS</dd></div>
+                <div><dt>Client</dt><dd>Ericsson</dd></div>
+                <div><dt>Degree</dt><dd>B.E. IT · University of Mumbai</dd></div>
+                <div><dt>Honours</dt><dd>AI &amp; Machine Learning</dd></div>
+                <div><dt>Location</dt><dd>India</dd></div>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ EXPERIENCE ═══ -->
+    <section class="sec alt" id="experience">
+      <div class="wrap">
+        <header class="head reveal"><span class="tag">experience.log</span><h2>Professional <span class="hl blue">experience</span></h2></header>
+        <article class="job card reveal">
+          <div class="job-head">
+            <div><h3>Software Developer</h3><p class="org">Tata Consultancy Services (TCS)</p></div>
+            <div class="job-meta"><span class="pill lime">2+ years</span><span class="pill">Client project: Ericsson</span></div>
+          </div>
+          <p class="job-sum">At TCS I develop and maintain software applications, primarily across backend development, full-stack solutions and automation. I translate technical requirements into working applications, implement complex backend logic, build APIs and integrate software components.</p>
+        </article>
+
+        <div class="resp-grid">
+          <article class="card resp reveal"><span class="ico bg-o">⚙️</span><h4>Backend Development</h4><p>Built backend functionality with Node.js, NestJS and Express.js — business logic, application workflows, APIs and database integration.</p></article>
+          <article class="card resp reveal"><span class="ico bg-b">🖥️</span><h4>Frontend Development</h4><p>Developed web interfaces with React, JavaScript, HTML and CSS, connecting frontend components to backend services.</p></article>
+          <article class="card resp reveal"><span class="ico bg-g">🗄️</span><h4>Database Management</h4><p>Used MongoDB and Mongoose to store, retrieve and manage data, building database-driven features into backend services.</p></article>
+          <article class="card resp reveal"><span class="ico bg-p">🤖</span><h4>AI Agents &amp; Automation</h4><p>Developed Python-based AI agents to automate tasks and support development workflows, reducing repetitive work.</p></article>
+          <article class="card resp reveal"><span class="ico bg-y">🔌</span><h4>API Development &amp; Integration</h4><p>Developed and integrated APIs, managed application logic and enabled communication between different services.</p></article>
+          <article class="card resp reveal"><span class="ico bg-c">🛠️</span><h4>Tools &amp; Collaboration</h4><p>Worked with GitLab, Git, Azure and other tools as part of day-to-day software development workflows.</p></article>
+        </div>
+        <div class="tech reveal"><b>Technologies used:</b>
+          <span>Node.js</span><span>NestJS</span><span>Express.js</span><span>React.js</span><span>JavaScript</span><span>Python</span><span>MongoDB</span><span>Mongoose</span><span>Azure</span><span>GitLab</span><span>REST APIs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROJECTS ═══ -->
+    <section class="sec" id="projects">
+      <div class="wrap">
+        <header class="head reveal"><span class="tag">projects/</span><h2>Featured <span class="hl">projects</span></h2></header>
+
+        <article class="card proj feature reveal">
+          <div class="feat-l">
+            <span class="cat c-o">AI · Computer Vision · Accessibility</span>
+            <h3>01 — Visual Assist</h3>
+            <p class="sub">AI-powered assistive technology for visually impaired individuals</p>
+            <p>Visual Assist helps visually impaired people identify objects in their surroundings — especially objects that look similar or are positioned around them. Our team built it with <b>Convolutional Neural Networks and YOLOv5</b>: it processes visual input, identifies the objects and gives <b>audio feedback</b> describing each object's name and position.</p>
+            <ul class="check">
+              <li>AI-based object detection</li><li>CNN and YOLOv5 integration</li><li>Object identification</li><li>Audio feedback</li><li>Object position information</li><li>Accessibility-focused functionality</li>
+            </ul>
+            <div class="chips"><span>Python</span><span>CNN</span><span>YOLOv5</span><span>Object Detection</span><span>Audio Feedback</span></div>
+          </div>
+          <div class="feat-r">
+            <div class="trophy"><span>🏅</span><div><b>Consolation Prize</b><small>College-level project event</small></div></div>
+            <div class="learn"><h4>What I learned</h4><p>It strengthened my understanding of computer vision, deep learning, object detection and the practical challenges of building AI applications — and how AI can address problems that affect people's everyday lives.</p></div>
+            <p class="meta">Final-year engineering project</p>
+          </div>
+        </article>
+
+        <div class="proj-grid">
+          <article class="card proj reveal">
+            <span class="cat c-b">AI · Computer Vision</span><h3>02 — Sign Language Detection</h3><p class="sub">AI-based sign language recognition system</p>
+            <p>An academic project exploring computer vision and machine learning to recognise sign-language gestures, and how visual information can be processed for classification. It added to my experience with ML concepts and accessibility-related applications.</p>
+            <ul class="check"><li>Gesture recognition</li><li>Computer-vision concepts</li><li>ML-based recognition</li></ul>
+            <div class="trophy sm"><span>🏅</span><b>Consolation Prize · college-level event</b></div>
+          </article>
+
+          <article class="card proj reveal">
+            <span class="cat c-g">Cybersecurity · Software</span><h3>03 — Cipher X</h3><p class="sub">Encryption and data-security application</p>
+            <p>A project on encryption and data security — how information can be protected through encryption techniques, and why secure data handling matters in software applications.</p>
+            <ul class="check"><li>Encryption concepts</li><li>Data security</li><li>Secure information handling</li></ul>
+            <a class="link" href="https://github.com/YOGESHGOVARI/Cipher-X" target="_blank" rel="noopener">GitHub repository ↗</a>
+          </article>
+
+          <article class="card proj reveal">
+            <span class="cat c-p">Security · Hardware</span><h3>04 — RFID-Based System Unlock</h3><p class="sub">RFID authentication system</p>
+            <p>Uses Radio Frequency Identification for system authentication, showing how RFID can be part of an access-control mechanism and exploring authentication beyond passwords.</p>
+            <ul class="check"><li>RFID technology</li><li>Authentication</li><li>Access control</li></ul>
+            <a class="link" href="https://github.com/YOGESHGOVARI/System-Unlock-Using-RFID" target="_blank" rel="noopener">GitHub repository ↗</a>
+          </article>
+
+          <article class="card proj reveal">
+            <span class="cat c-y">AI · Healthcare</span><h3>05 — Breast Cancer Detection</h3><p class="sub">Machine-learning-based medical analysis</p>
+            <p>An academic project applying AI and machine learning to breast cancer detection, reflecting my interest in how intelligent computing can support healthcare applications.</p>
+            <ul class="check"><li>Artificial Intelligence</li><li>Machine Learning</li><li>Medical data analysis</li></ul>
+          </article>
+
+          <article class="card proj wide reveal">
+            <span class="cat c-o">Generative AI · Automation</span><h3>06 — AI Agents &amp; Workflow Automation</h3><p class="sub">Intelligent automation using Python</p>
+            <p>At TCS I developed AI agents to automate tasks and support software-development workflows. It introduced me to practical uses of AI beyond academic projects — how intelligent agents can handle repetitive activities, improve development processes and support technical problem-solving.</p>
+            <ul class="check cols"><li>Python-based AI agents</li><li>Intelligent task automation</li><li>Development workflow automation</li><li>Generative AI applications</li><li>Software engineering integration</li></ul>
+            <p class="fine">Specific client implementation details are excluded to respect professional confidentiality.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section class="sec alt" id="skills">
+      <div class="wrap">
+        <header class="head reveal"><span class="tag">skills.json</span><h2>Technical <span class="hl blue">skills</span></h2></header>
+        <div class="skill-grid">
+          <article class="card skill reveal"><h3><i class="bg-y"></i>Programming Languages</h3><div class="chips"><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>C</span></div></article>
+          <article class="card skill reveal"><h3><i class="bg-b"></i>Frontend</h3><div class="chips"><span>React.js</span><span>HTML5</span><span>CSS3</span><span>Tailwind CSS</span><span>Bootstrap</span></div></article>
+          <article class="card skill reveal"><h3><i class="bg-o"></i>Backend</h3><div class="chips"><span>Node.js</span><span>NestJS</span><span>Express.js</span><span>REST API Development</span><span>Backend Architecture</span><span>API Integration</span></div></article>
+          <article class="card skill reveal"><h3><i class="bg-g"></i>Full-Stack</h3><div class="chips"><span>MERN Stack</span><span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span></div></article>
+          <article class="card skill reveal"><h3><i class="bg-p"></i>Databases</h3><div class="chips"><span>MongoDB</span><span>Mongoose</span><span>MySQL</span><span>PostgreSQL</span></div></article>
+          <article class="card skill reveal"><h3><i class="bg-c"></i>Cloud &amp; Dev Tools</h3><div class="chips"><span>Microsoft Azure</span><span>AWS</span><span>Git</span><span>GitHub</span><span>GitLab</span><span>Docker</span></div></article>
+          <article class="card skill wide reveal"><h3><i class="bg-o"></i>Artificial Intelligence &amp; Machine Learning</h3><div class="chips"><span>Machine Learning</span><span>Deep Learning</span><span>Computer Vision</span><span>CNN</span><span>YOLOv5</span><span>Generative AI</span><span>AI Agents</span><span>Prompt Engineering</span></div></article>
+          <article class="card skill reveal"><h3><i class="bg-g"></i>Additional Areas</h3><div class="chips"><span>Cybersecurity Fundamentals</span><span>Authentication</span><span>Encryption</span><span>Workflow Automation</span><span>Software Debugging</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ EDUCATION ═══ -->
+    <section class="sec" id="education">
+      <div class="wrap">
+        <header class="head reveal"><span class="tag">education.md</span><h2>Learning <span class="hl">path</span></h2></header>
+        <div class="two">
+          <article class="card edu reveal">
+            <span class="pill lime">CGPA 8.26</span>
+            <h3>Bachelor of Engineering — Information Technology</h3>
+            <p class="org">University of Mumbai, India</p>
+            <p class="honours">🎓 Honours in Artificial Intelligence and Machine Learning</p>
+            <p>My engineering education built a foundation in programming, mathematics, software engineering, database systems, networking and emerging technologies. Alongside the core IT curriculum I pursued Honours in AI &amp; ML to learn more about intelligent computing systems.</p>
+            <h4>Relevant subjects</h4>
+            <ul class="chips plain"><li>Mathematics</li><li>Artificial Intelligence &amp; ML</li><li>Deep Learning</li><li>Data Science</li><li>Data Structures &amp; Algorithms</li><li>Database Management Systems</li><li>Cybersecurity</li><li>Internet of Things</li><li>Computer Networks</li><li>Software Engineering</li></ul>
+          </article>
+          <aside class="stack-col">
+            <div class="card ielts reveal"><span class="big">7.0</span><div><h3>IELTS Academic</h3><p>Overall band 7.0 — English language proficiency.</p></div></div>
+            <div class="card note reveal"><h3>Areas of interest</h3>
+              <ul class="interest">
+                <li><b>AI &amp; Machine Learning</b> — intelligent algorithms, model development and practical AI.</li>
+                <li><b>Computer Vision</b> — object detection, image recognition, accessibility-focused apps.</li>
+                <li><b>Backend Engineering</b> — complex application logic and service integration.</li>
+                <li><b>Generative AI &amp; Agents</b> — tools for automation, productivity and dev workflows.</li>
+                <li><b>Cybersecurity</b> — secure design, authentication, encryption.</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CERTIFICATIONS ═══ -->
+    <section class="sec alt" id="certs">
+      <div class="wrap">
+        <header class="head reveal"><span class="tag">certs-and-awards.md</span><h2>Certified &amp; <span class="hl blue">recognised</span></h2></header>
+        <div class="cert-grid">
+          <article class="card cert reveal"><span class="badge bg-o">Amazon Web Services</span><h3>AWS Certified Cloud Practitioner</h3><p>Foundational knowledge of cloud computing, AWS services, cloud architecture, security concepts and cloud-based infrastructure.</p></article>
+          <article class="card cert reveal"><span class="badge bg-p">EC-Council</span><h3>Certified Ethical Hacker (CEH)</h3><p>Ethical-hacking concepts, cybersecurity principles, security vulnerabilities and defensive security practices.</p></article>
+          <article class="card cert reveal"><span class="badge bg-y">Udemy · Oct 2026 · 25 h</span><h3>Python for Data Science &amp; Machine Learning Bootcamp</h3><p>Python programming, data-science concepts, data analysis, visualisation and machine learning.</p></article>
+          <article class="card cert reveal"><span class="badge bg-g">Udemy · Oct 2026 · 17.5 h</span><h3>AI A-Z: Agentic AI, Generative AI, Prompt Engineering &amp; RL</h3><p>Agentic AI, Generative AI, Prompt Engineering and Reinforcement Learning concepts.</p></article>
+        </div>
+        <h3 class="sub-h reveal">Achievements &amp; awards</h3>
+        <div class="award-grid">
+          <article class="card award reveal"><span class="medal">🏅</span><h4>Consolation Prize — Visual Assist</h4><p>College-level project event, for the AI-based assistive technology project.</p></article>
+          <article class="card award reveal"><span class="medal">🏅</span><h4>Consolation Prize — Sign Language Detection</h4><p>College-level project event, for the computer-vision and gesture-recognition project.</p></article>
+          <article class="card award reveal"><span class="medal">🎓</span><h4>Honours in AI &amp; Machine Learning</h4><p>An additional academic Honours specialisation alongside the B.E. in Information Technology.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ GOALS ═══ -->
+    <section class="sec" id="goals">
+      <div class="wrap">
+        <div class="goal card reveal">
+          <span class="tag">roadmap.md</span>
+          <h2>Growing into an <span class="hl">AI/ML Engineer</span> with strong software foundations.</h2>
+          <div class="goal-cols">
+            <p>Through my engineering projects I gained experience applying AI concepts to practical problems. My work at TCS showed me how software systems are built and how AI can be integrated into development workflows.</p>
+            <p>I want to keep strengthening my knowledge of machine learning, deep learning, intelligent automation and software engineering — and, in the long term, contribute to <b>reliable AI-powered applications that solve meaningful problems</b>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="sec contact-sec" id="contact">
+      <div class="wrap">
+        <div class="contact card reveal">
+          <span class="tag">contact.sh</span>
+          <h2>Let's <span class="hl">connect!</span></h2>
+          <p>I'm always interested in discussing software development, Artificial Intelligence, Machine Learning and opportunities to collaborate on technical projects.</p>
+          <div class="links">
+            <a class="btn accent" href="mailto:yogeshgovari1502@gmail.com">✉ yogeshgovari1502@gmail.com</a>
+            <button class="btn" id="copy" type="button">Copy email</button>
+            <a class="btn" href="https://github.com/YOGESHGOVARI" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="btn" href="https://instagram.com/yogesh1502_" target="_blank" rel="noopener">Instagram ↗</a>
+            <a class="btn" href="https://fb.com/yogeshgovari" target="_blank" rel="noopener">Facebook ↗</a>
+          </div>
+          <p class="loc">📍 India</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <div><b>Yogesh Govari</b><p>Software Developer | Full-Stack Engineer | AI/ML Enthusiast</p><p class="dim">Building practical software solutions and exploring the possibilities of intelligent technology.</p></div>
+      <div class="foot-r"><a href="#home">Back to top ↑</a><p class="dim">© 2026 Yogesh Govari. All Rights Reserved.</p></div>
+    </div>
+  </footer>
+
+  <div class="statusbar" aria-hidden="true"><span>⎇ main</span><span>✓ 0 errors</span><span class="hide-m">Node.js · Python · React</span><span class="hide-m">UTF-8</span><span class="sp" id="clock"></span></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
